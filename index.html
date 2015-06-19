@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Polymer Starter Kit"/>
-    <title>Polymer Starter Kit</title>
+    <title>SliskiCode</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- Chrome for Android theme color -->
@@ -65,6 +65,11 @@
                     <span>Home</span>
                 </a>
 
+                <a data-route="home" href="/">
+                    <iron-icon icon="book"></iron-icon>
+                    <span>Blog</span>
+                </a>
+
             </paper-menu>
         </div>
         <paper-header-panel main mode="standard">
@@ -75,9 +80,18 @@
                 <span class="flex"></span>
 
                 <!-- Toolbar icons -->
-                <paper-icon-button src="/images/icons/stackoverflow.svg"></paper-icon-button>
-                <paper-icon-button src="/images/icons/github.svg"></paper-icon-button>
-                <paper-icon-button src="/images/icons/linkedin.svg"></paper-icon-button>
+                <paper-icon-button
+                        id="stackoverflow"
+                        src="/images/icons/stackoverflow.svg"
+                        on-tap="goToStackOverflow"></paper-icon-button>
+                <paper-icon-button
+                        id="github"
+                        src="/images/icons/github.svg"
+                        on-tap="goToGitHub"></paper-icon-button>
+                <paper-icon-button
+                        id="linkedin"
+                        src="/images/icons/linkedin.svg"
+                        on-tap="goToLinkedIn"></paper-icon-button>
 
                 <!-- Application name -->
                 <div class="middle paper-font-display2 app-name">SliskiCode</div>
