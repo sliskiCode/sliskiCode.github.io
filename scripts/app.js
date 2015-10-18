@@ -1,44 +1,58 @@
-(function(document) {
-  'use strict';
+(function (document) {
+    'use strict';
 
-  // Grab a reference to our auto-binding template
-  // and give it some initial binding values
-  // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
-  var app = document.querySelector('#app');
+    var app = document.querySelector('#app');
 
-  app.displayInstalledToast = function() {
-    document.querySelector('#caching-complete').show();
-  };
+    app.displayInstalledToast = function () {
+        if (!document.querySelector('platinum-sw-cache').disabled) {
+            document.querySelector('#caching-complete').show();
+        }
+    };
 
-  // Listen for template bound event to know when bindings
-  // have resolved and content has been stamped to the page
-  app.addEventListener('dom-change', function() {
-    console.log('Our app is ready to rock!');
-  });
+    app.addEventListener('dom-change', function () {
+        console.log('Our app is ready to rock!');
+    });
 
-  // See https://github.com/Polymer/polymer/issues/1381
-  window.addEventListener('WebComponentsReady', function() {
-    // imports are loaded and elements have been registered
-  });
+    window.addEventListener('WebComponentsReady', function () {
+    });
 
-  // Close drawer after menu item is selected if drawerPanel is narrow
-  app.onMenuSelect = function() {
-    var drawerPanel = document.querySelector('#paperDrawerPanel');
-    if (drawerPanel.narrow) {
-      drawerPanel.closeDrawer();
-    }
-  };
+    addEventListener('paper-header-transform', function (e) {
+        var appName = document.querySelector('#mainToolbar .app-name');
+        var middleContainer = document.querySelector('#mainToolbar .middle-container');
+        var bottomContainer = document.querySelector('#mainToolbar .bottom-container');
+        var detail = e.detail;
+        var heightDiff = detail.height - detail.condensedHeight;
+        var yRatio = Math.min(1, detail.y / heightDiff);
+        var maxMiddleScale = 0.50;
+        var scaleMiddle = Math.max(maxMiddleScale, (heightDiff - detail.y) / (heightDiff / (1 - maxMiddleScale)) + maxMiddleScale);
+        var scaleBottom = 1 - yRatio;
 
-  app.goToStackOverflow = function(){
-    window.location.href = 'http://stackoverflow.com/users/1408086/sliskicode';
-  };
+        Polymer.Base.transform('translate3d(0,' + yRatio * 100 + '%,0)', middleContainer);
+        Polymer.Base.transform('scale(' + scaleBottom + ') translateZ(0)', bottomContainer);
+        Polymer.Base.transform('scale(' + scaleMiddle + ') translateZ(0)', appName);
+    });
 
-  app.goToGitHub = function(){
-    window.location.href = 'https://github.com/sliskiCode';
-  };
+    app.onDataRouteClick = function () {
+        var drawerPanel = document.querySelector('#paperDrawerPanel');
+        if (drawerPanel.narrow) {
+            drawerPanel.closeDrawer();
+        }
+    };
 
-  app.goToLinkedIn = function(){
-    window.location.href = 'https://pl.linkedin.com/pub/piotr-slesarew/5/147/240';
-  };
+    app.scrollPageToTop = function () {
+        document.getElementById('mainContainer').scrollTop = 0;
+    };
+
+    app.goToStackOverflow = function () {
+        window.location.href = 'http://stackoverflow.com/users/1408086/sliskicode';
+    };
+
+    app.goToGitHub = function () {
+        window.location.href = 'https://github.com/sliskiCode';
+    };
+
+    app.goToLinkedIn = function () {
+        window.location.href = 'https://pl.linkedin.com/pub/piotr-slesarew/5/147/240';
+    };
 
 })(document);

@@ -1,11 +1,38 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="416px" height="237px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <g>
-        <g id="Layer1">
-            <g>
-                <text x="11.4885px" y="154.324px" style="font-family:Roboto;font-size:110.353px;fill:white;">Ś<tspan x="62.8232px 83.669px 104.515px 148.299px 191.099px 211.944px 265.7px 313.301px 360.901px ">liskiCode</tspan></text>
+<svg width="100%" height="100%" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Layer1">
+        <g>
+            <circle cx="300" cy="300" r="297.912" style="fill:url(#tag1);"/>
+            <path d="M105.316,287.333L168.73,287.942L164.464,244.666L147.397,243.447L143.74,225.161L124.845,221.504L126.064,203.828L164.464,201.999L166.292,182.495L103.511,182.495L102.902,222.723L124.845,226.38L125.454,239.79L127.283,245.276L145.569,248.323L145.569,265.39L104.121,267.828L105.316,287.333Z" style="fill:white;"/>
+            <path d="M309.506,288.552L372.921,289.161L368.654,245.885L351.587,244.666L347.93,226.38L329.035,222.723L330.254,205.047L368.654,203.218L370.482,183.714L307.702,183.714L307.092,223.942L329.035,227.599L329.644,241.009L331.473,246.495L349.759,249.542L349.759,266.609L308.311,269.047L309.506,288.552Z" style="fill:white;"/>
+            <circle cx="300" cy="300" r="300" style="fill:none;stroke-width:5.5px;stroke:white;"/>
+            <circle cx="300" cy="300" r="287.312" style="fill:none;stroke-width:13px;stroke:white;"/>
+            <clipPath id="tag2">
+                <rect x="98.3624" y="177.745" width="403.275" height="116.368"/>
+            </clipPath>
+            <g clip-path="url(#tag2)">
+                <text x="98.3624px" y="293.88px" style="font-family:Guriga;font-size:171.447px;fill:white;">Sliski</text>
             </g>
+            <clipPath id="tag3">
+                <rect x="142.253" y="314.474" width="319.77" height="116.367"/>
+            </clipPath>
+            <g clip-path="url(#tag3)">
+                <text x="142.253px" y="430.9px" style="font-family:Guriga;font-size:171.447px;fill:white;">code</text>
+            </g>
+            <path d="M266.704,184.985L267.314,286.776L285.599,287.995L286.818,181.911L266.704,184.985Z" style="fill:white;"/>
+            <path d="M186.992,184.959L186.992,287.359L249.797,289.797L251.016,266.026L209.545,265.416L207.716,184.349L186.992,184.959Z" style="fill:white;"/>
+            <path d="M392.401,183.104L413.735,183.714L415.563,223.333L434.459,220.895L435.678,183.714L452.744,183.104L455.792,221.504L435.068,226.99L436.287,244.666L455.182,248.323L456.401,287.942L436.287,288.552L432.02,248.323L414.954,245.885L411.906,286.114L393.011,287.333L392.401,183.104Z" style="fill:white;"/>
+            <path d="M478.344,183.714L496.02,182.495L497.239,286.723L476.516,287.942L478.344,183.714Z" style="fill:white;"/>
+            <path d="M210.154,320.248L210.154,337.315L169.926,341.582L170.535,403.144L210.154,405.582L210.764,424.477L147.347,425.086L148.566,320.248L210.154,320.248Z" style="fill:white;"/>
+            <path d="M394.23,318.965L456.401,319.575L456.401,336.641L416.825,340.908L417.435,360.439L432.673,361.048L436.94,378.115L425.359,382.382L414.387,383.601L416.825,403.715L440.597,406.153L455.835,404.934L456.444,425.048L393.709,424.439L394.23,318.965Z" style="fill:white;"/>
+            <path d="M229.606,321.77L288.655,321.032L290.87,425.476L228.499,423.63L225.546,383.403L248.797,381.574L248.428,403.733L269.095,403.364L269.095,343.946L249.904,342.469L247.321,375.685L226.654,376.054L229.606,321.77Z" style="fill:white;"/>
+            <path d="M225.9,379.744L222.947,369.411L245.475,371.994L249.166,380.482L240.678,386.387L227.761,386.387L225.9,379.744Z" style="fill:white;"/>
+            <path d="M354.463,340.64L373.668,340.64L373.299,401.904L353.001,401.535L354.463,340.64Z" style="fill:white;"/>
+            <path d="M335.655,319.973L351.525,321.08L351.525,335.488L330.12,342.5L333.072,395.275L335.655,404.132L348.942,403.025L355.216,409.299L352.632,420.371L339.715,424.8L319.786,424.8L309.821,420.002L310.559,320.725L335.655,319.973Z" style="fill:white;"/>
         </g>
     </g>
+    <defs>
+        <linearGradient id="tag1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-164.919,-207.888,207.888,-164.919,59.3659,76.3508)"><stop offset="0%" style="stop-color:rgb(59,63,65);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(59,63,65);stop-opacity:0"/></linearGradient>
+    </defs>
 </svg>

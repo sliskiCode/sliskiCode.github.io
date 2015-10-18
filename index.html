@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Polymer Starter Kit"/>
     <title>SliskiCode</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- Chrome for Android theme color -->
     <meta name="theme-color" content="#393939">
@@ -20,7 +19,7 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Polymer Starter Kit">
+    <meta name="application-name" content="PSK">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -43,14 +42,18 @@
     <!-- will be replaced with elements/elements.vulcanized.html -->
     <link rel="import" href="elements/elements.html">
     <!-- endreplace-->
+
+    <!-- For shared styles, shared-styles.html import in elements.html -->
+    <style is="custom-style" include="shared-styles"></style>
+
 </head>
 
 <body unresolved class="fullbleed layout vertical">
-<span id="browser-sync-binding"></span>
 <template is="dom-bind" id="app">
 
     <paper-drawer-panel id="paperDrawerPanel">
-        <div drawer>
+        <!-- Drawer Scroll Header Panel -->
+        <paper-scroll-header-panel drawer fixed>
 
             <!-- Drawer Toolbar -->
             <paper-toolbar id="drawerToolbar">
@@ -58,24 +61,19 @@
             </paper-toolbar>
 
             <!-- Drawer Content -->
-            <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-
-                <a data-route="home" href="/">
-                    <iron-icon icon="home"></iron-icon>
-                    <span>Home</span>
+            <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
+                <a data-route="about" href="/" on-click="onDataRouteClick">
+                    <iron-icon src="/images/icons/ic_android.svg"></iron-icon>
+                    <span>About</span>
                 </a>
-
-                <a data-route="home" href="/">
-                    <iron-icon icon="book"></iron-icon>
-                    <span>Blog</span>
-                </a>
-
             </paper-menu>
-        </div>
-        <paper-header-panel main mode="standard">
+        </paper-scroll-header-panel>
+
+        <!-- Main Area -->
+        <paper-scroll-header-panel main condenses keep-condensed-header>
 
             <!-- Main Toolbar -->
-            <paper-toolbar id="mainToolbar">
+            <paper-toolbar id="mainToolbar" class="tall">
                 <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
                 <span class="flex"></span>
 
@@ -94,33 +92,40 @@
                         on-tap="goToLinkedIn"></paper-icon-button>
 
                 <!-- Application name -->
-                <div class="middle paper-font-display2 app-name">SliskiCode</div>
+                <div class="middle middle-container center horizontal layout">
+                    <div class="app-name">Piotr Slesarew</div>
+                </div>
+
+                <!-- Application sub title -->
+                <div class="bottom bottom-container center horizontal layout">
+                    <div class="bottom-title paper-font-subhead">Android software engineer</div>
+                </div>
 
             </paper-toolbar>
 
             <!-- Main Content -->
             <div class="content">
-
-
                 <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
-                    <section data-route="home">
-                        <paper-material elevation="2">
-                            <h2 class="paper-font-display2">Summary</h2>
-                            <p>I am a professional and ambitious software engineer with more than four years of experience in designing and implementing advanced Java Android applications. I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am passionate about Android and mobile technologies and I pride myself in advocating clean coding and robust unit testing. With excellent problem-solving and interpersonal skills I am seeking a challenging position where I can enhance my craft and contribute my experience.</p>
+                    <section data-route="about">
+                        <paper-material elevation="1">
+                            <h2 class="page-title">Summary</h2>
+
+                            <p>I am a professional and ambitious software engineer with five years of
+                                experience in designing and implementing advanced Java Android applications.
+                                I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am
+                                passionate about Android and mobile technologies and I pride myself in advocating clean
+                                coding and robust unit testing. With excellent problem-solving and interpersonal skills
+                                I am seeking a challenging position where I can enhance my craft and contribute my
+                                experience.</p>
                         </paper-material>
                     </section>
-
                 </iron-pages>
             </div>
-        </paper-header-panel>
+        </paper-scroll-header-panel>
     </paper-drawer-panel>
-
 </template>
 
-<!-- build:js scripts/app.js -->
 <script src="scripts/app.js"></script>
-<!-- endbuild-->
 </body>
-
 </html>
