@@ -66,6 +66,10 @@
                     <iron-icon src="/images/icons/ic_android.svg"></iron-icon>
                     <span>About</span>
                 </a>
+                <a data-route="blog" href="/blog" on-click="onDataRouteClick">
+                    <iron-icon src="/images/icons/ic_code.svg"></iron-icon>
+                    <span>Blog</span>
+                </a>
             </paper-menu>
         </paper-scroll-header-panel>
 
@@ -108,18 +112,45 @@
                 <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
                     <section data-route="about">
-                        <paper-material elevation="1">
+                        <paper-material elevation="2">
                             <h2 class="page-title">Summary</h2>
-
-                            <p>I am a professional and ambitious software engineer with five years of
+                            <p>
+                                I am a professional and ambitious software engineer with five years of
                                 experience in designing and implementing advanced Java Android applications.
                                 I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am
                                 passionate about Android and mobile technologies and I pride myself in advocating clean
                                 coding and robust unit testing. With excellent problem-solving and interpersonal skills
                                 I am seeking a challenging position where I can enhance my craft and contribute my
-                                experience.</p>
+                                experience.
+                            </p>
+                        </paper-material>
+
+                        <paper-material elevation="2">
+                            <h2 class="page-title">Work</h2>
+                            <h1>Software Craftsman at FarmaProm</h1>
+                            <p>
+                                I lead the development on the Android platform that supports over 90% of Poland’s pharmaceutical companies (ordering, tracking, inventory).
+                                Leading a team of three developers we are practicing a combination of Scrum/Kanban methodologies.
+                                I am responsible for designing and implementing new functionality and keeping up-to-date with the latest Android features and guidelines.
+                                Also I create Python tools to speed up our internal development.
+                            </p>
+                        </paper-material>
+
+                        <paper-material elevation="2">
+                            <h2 class="page-title">Interests</h2>
+                            <p>
+                                Mobile, programming, snowboarding, gaming.
+                            </p>
                         </paper-material>
                     </section>
+
+                    <section data-route="blog">
+                        <paper-material elevation="2">
+                            <!--<h2 class="page-title">Readable testing using Spock</h2>-->
+                            <!--<p>This is the blog section</p>-->
+                        </paper-material>
+                    </section>
+
                 </iron-pages>
             </div>
         </paper-scroll-header-panel>
