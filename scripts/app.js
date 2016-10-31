@@ -43,6 +43,10 @@
         document.getElementById('mainContainer').scrollTop = 0;
     };
 
+    app.goToMedium = function () {
+        window.location.href = 'https://medium.com/@piotr.slesarew';
+    };
+
     app.goToStackOverflow = function () {
         window.location.href = 'http://stackoverflow.com/users/1408086/sliskicode';
     };
