@@ -59,8 +59,4 @@
         window.location.href = 'https://pl.linkedin.com/pub/piotr-slesarew/5/147/240';
     };
 
-    app.downloadCV = function () {
-        window.location = '/files/PiotrSlesarewCV.pdf';
-    };
-
 })(document);
