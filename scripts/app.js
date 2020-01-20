@@ -56,7 +56,7 @@
     };
 
     app.goToLinkedIn = function () {
-        window.location.href = 'https://pl.linkedin.com/pub/piotr-slesarew/5/147/240';
+        window.location.href = 'https://www.linkedin.com/in/piotr-ślesarew-2401475/';
     };
 
 })(document);
