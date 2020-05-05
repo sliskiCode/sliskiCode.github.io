@@ -1,0 +1,50 @@
+{
+  "cv_data": {
+    "id": "1",
+    "name": "Piotr",
+    "surname": "Ślesarew",
+    "e_mail": "piotr.slesarew@gmail.com",
+    "phone_number": "+48 781 064 862",
+    "summary": "I am a professional and ambitious software engineer with more than nine years of experience in designing and implementing advanced Java and Kotlin Android applications. I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am passionate about mobile technologies and I pride myself in advocating clean coding and robust unit testing. With excellent problem-solving and interpersonal skills, I am seeking a challenging position where I can enhance my craft.",
+    "positions": [
+      {
+        "title": "Senior Android Engineer at Babylon Health",
+        "dates": "August 2019 – Present (9 months)",
+        "description": "Part of the big team consisting of more than 30 Android engineers. Working on features for Babylon UK and US within the Healthcare sector. Sharing knowledge, contributing to the documentation and processes. Doing core platform work in spare time.",
+        "technologies": "Kotlin, Android SDK, RxJava2, Dagger2, Spek2, jUnit5, Kakao, Unidirectional Data Flow"
+      },
+      {
+        "title": "Principal Android Engineer at William Hill",
+        "dates": "May 2017 – July 2019 (2 years 3 months)",
+        "description": "As a member of a mobile core team, I was responsible for designing and developing robust, reusable components for William Hill mobile applications. Additionally, as a Principal Engineer, I set the path of used technologies and tools.",
+        "technologies": "Kotlin, Android SDK, RxJava2, Dagger2, jUnit4, Robot Patter"
+      },
+      {
+        "title": "Android Engineer at Grid Dynamics",
+        "dates": "October 2016 – April 2017 (7 months)",
+        "description": "Developing, maintaining and supporting Android applications for Macy’s, one of the nation’s premier omnichannel retailers in the U.S. As an experienced Android Engineer I actively support the internal mobile community by preparing tech talks and training materials.",
+        "technologies": "Java, Android SDK, RxJava, Dagger, GIT, REST, Maven"
+      },
+      {
+        "title": "Lead Android Engineer at FarmaProm",
+        "dates": "December 2012 – October 2016 (3 years 11 months)",
+        "description": "I lead the development on the IZI Android platform that supports over 90% of Poland’s pharmaceutical companies (ordering, tracking, inventory). Leading a team of three developers we are practicing a combination of Scrum/Kanban methodologies.\n\nWith my initiative and under my lead the system has undergone a major rebuild to improve project and code quality, maintainability(MVP, clean architecture) and now incorporates continuous integration.  It also included a complete redesign of our front-end layer which allowed us to apply Android design patterns.",
+        "technologies": "Java, Kotlin, Groovy, Python, Android SDK, SQLite, XML, GIT, REST, Dependency Injection, Mockito, jUnit, Robolectric, Gradle, Espresso"
+      }
+    ],
+    "personal_development": [
+      {
+        "description": "Conference speaker: Droidcon, Mobiconf, Code Europe and local meet-ups"
+      },
+      {
+        "description": "Tech blogger: medium.com/@piotr.slesarew"
+      },
+      {
+        "description": "Main GDG Kraków organiser of Android Tech Talks meet-ups"
+      },
+      {
+        "description": "StackOverflow contributor: stackoverflow.com/users/1408086/piotr-ślesarew"
+      }
+    ]
+  }
+}
