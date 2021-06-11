@@ -8,8 +8,14 @@
   "summary": "I am a professional and ambitious software engineer with more than nine years of experience in designing and implementing advanced Java and Kotlin Android applications. I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am passionate about mobile technologies and I pride myself in advocating clean coding and robust unit testing. With excellent problem-solving and interpersonal skills, I am seeking a challenging position where I can enhance my craft.",
   "positions": [
     {
+      "title": "Mobile Tech Lead at HSBC",
+      "dates": "August 2020 – Present (11 months)",
+      "description": "Leading feature team focused on delivering personal financial management functionalities for UK HSBC mobile application such as Balance After Bills and Manage Bills. Contributing to the Android code base on the daily basis. Reviewing and setting up coding standards.",
+      "technologies": "Kotlin, Android SDK, Kotlin Coroutines, Dagger2, jUnit5, Kakao, Unidirectional Data Flow"
+    },
+    {
       "title": "Senior Android Engineer at Babylon Health",
-      "dates": "August 2019 – Present (10 months)",
+      "dates": "August 2019 – December 2020 (1 year 5 months)",
       "description": "Part of the big team consisting of more than 30 Android engineers. Working on features for Babylon UK and US within the Healthcare sector. Sharing knowledge, contributing to the documentation and processes. Doing core platform work in spare time.",
       "technologies": "Kotlin, Android SDK, RxJava2, Dagger2, Spek2, jUnit5, Kakao, Unidirectional Data Flow"
     },
