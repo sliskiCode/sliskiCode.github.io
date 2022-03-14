@@ -5,11 +5,17 @@
   "e_mail": "piotr.slesarew@gmail.com",
   "phone_number": "+48 781 064 862",
   "photo_url": "https://raw.githubusercontent.com/sliskiCode/sliskiCode.github.io/master/cv_photo.jpg",
-  "summary": "I am a professional and ambitious software engineer with more than ten years of experience in designing and implementing advanced Java and Kotlin Android applications. I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am passionate about mobile technologies and I pride myself in advocating clean coding and robust unit testing. With excellent problem-solving and interpersonal skills, I am seeking a challenging position where I can enhance my craft.",
+  "summary": "I am a professional and ambitious software engineer with more than eleven years of experience in designing and implementing advanced Java and Kotlin Android applications. I am an Agile thinker and an active practitioner of Scrum/Kanban methodologies. I am passionate about mobile technologies and I pride myself in advocating clean coding and robust unit testing. With excellent problem-solving and interpersonal skills, I am seeking a challenging position where I can enhance my craft.",
   "positions": [
     {
+      "title": "Senior Android Engineer @ Vodafone",
+      "dates": "August 2021 – March 2022 (8 months)",
+      "description": "For the first four months I was working on implementation and adoption of Design System for Android platform. Last four months I was responsible for refactoring of voip and chat related codebase along with support and adding new features to it.",
+      "technologies": "Kotlin, Android SDK, Kotlin Coroutines, Dagger2, Unidirectional Data Flow, jUnit5"
+    },
+    {
       "title": "Mobile Tech Lead @ HSBC",
-      "dates": "August 2020 – Present (11 months)",
+      "dates": "August 2020 – Present (1 year 8 months)",
       "description": "Leading feature team focused on delivering personal financial management functionalities for UK HSBC mobile application such as Balance After Bills and Manage Bills. Contributing to the Android code base on the daily basis. Reviewing and setting up coding standards.",
       "technologies": "Kotlin, Android SDK, Kotlin Coroutines, Dagger2, Unidirectional Data Flow, jUnit5, Screenshot testing, Espresso"
     },
